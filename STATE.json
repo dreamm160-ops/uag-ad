@@ -1,0 +1,30 @@
+{
+  "slug": "ugc-ad-studio",
+  "status": "deployed",
+  "phase": "production_smoke_passed",
+  "updatedAt": "2026-05-31T10:34:54Z",
+  "summary": "Production Vercel deployment is live at https://scrollstop-ugc-studio.vercel.app. Pollinations callback URI was added, production app key was updated, and smoke checks confirmed root page, live models API, new public app key embedding, previous key removal, and no manual key UI. GitHub repo is https://github.com/dreamm160-ops/uag-ad on branch main.",
+  "currentFocus": "Production is live. Next work is monitoring, user smoke testing, and revenue workflow iteration.",
+  "nextTasks": [
+    "Monitor production deployment",
+    "Run browser OAuth smoke test with a real Pollinations account",
+    "Iterate on UGC workflow after user feedback"
+  ],
+  "blockers": [],
+  "quality": {
+    "coreWorkflowWorking": true,
+    "buildPassing": true,
+    "testsPassing": true,
+    "docsReady": true,
+    "deployReady": true,
+    "deployed": true,
+    "githubPublished": true
+  },
+  "knownLimitations": [
+    "Storyboard frames display Pollinations image URLs; actual image rendering requires the user's key.",
+    "Export is browser print-to-PDF and JSON download; no server-side PDF generation.",
+    "No persistent user accounts or cloud storage.",
+    "Voiceover preview is not yet implemented.",
+    "Mock mode is disabled in production (.env.local). App strictly requires user BYOP login."
+  ]
+}
