@@ -14,7 +14,6 @@ A Pollinations-powered creative workstation that turns one product brief into st
 
 - Next.js 15 (App Router)
 - TypeScript
-- Pollinations AI (text + image) via BYOP auth
 
 ## Environment variables
 
@@ -78,4 +77,4 @@ src/
 
 ## License
 
-MIT — portfolio app for the Lab Apps builder loop.
+MIT
