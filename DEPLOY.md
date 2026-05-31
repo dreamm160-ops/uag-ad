@@ -104,16 +104,14 @@ npm run start       # Start on port 3000 (or set PORT)
 
 ## Deployment options
 
-### Option A: GitHub Actions (recommended)
-1. Fork/push this repo to your GitHub account.
-2. Create a Vercel project at <https://vercel.com/new>.
+### Option A: Vercel Git Integration (recommended)
+1. Push this repo to GitHub.
+2. Create or open the Vercel project at <https://vercel.com/new>.
 3. Link the GitHub repo to the Vercel project.
-4. Add these secrets in GitHub → Settings → Secrets:
-   - `VERCEL_TOKEN` — from <https://vercel.com/account/tokens>
-   - `VERCEL_ORG_ID` — from Vercel project settings
-   - `VERCEL_PROJECT_ID` — from Vercel project settings
-   - `NEXT_PUBLIC_POLLINATIONS_APP_KEY` — your `pk_...` key
-5. Push to `main` branch → auto-deploy via GitHub Actions.
+4. Keep production env vars in the Vercel dashboard.
+5. Push to `main` branch → Vercel builds from the linked repo.
+
+The included GitHub Actions workflow is CI-only: typecheck, tests, and build. It does not store Vercel tokens in GitHub.
 
 ### Option B: Vercel CLI (manual)
 ```bash
