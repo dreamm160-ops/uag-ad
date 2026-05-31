@@ -29,15 +29,7 @@ POLLINATIONS_TEXT_MODEL=openai
 
 # Optional: allow mock fallback when no user key is present (dev only)
 POLLINATIONS_ALLOW_MOCK=false
-```
-
-## Pollinations BYOP (Bring Your Own Publishable key)
-
-- The app uses a Pollinations **publishable key** (`pk_...`) as the app identifier for attribution and developer earnings.
-- Runtime generation requires a **user-authorized key** obtained through Pollinations login.
-- The app stores the returned user key in `localStorage` and sends it as `clientKey` with every generation request.
-- No hidden owner spend key is used in normal app runtime.
-- Direct image URLs append `?key=<userKey>` for authenticated image generation.
+``
 
 ## Scripts
 
